@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="keywords" content="Yang, YangHome, zubinJiang, jiangzubin, zubinJiang的技术主页, jiangzubin的技术主页, PHP技术blog, zubinJiang  web技术博客;" />
+	<meta name="description" content="zubinJiang  web技术博客" />
+	<meta content="name=PHP源码分析;action-uri=/php-internal;icon-uri=/favicon.ico" name="msapplication-task" />
+	<meta content="name=PHP应用;action-uri=/php;icon-uri=/favicon.ico" name="msapplication-task" />
+	<meta content="name=JS和CSS;action-uri=/jscss;icon-uri=/favicon.ico" name="msapplication-task" />
+	<meta content="name=作者随笔;action-uri=/notes;icon-uri=/favicon.ico" name="msapplication-task" />
+	<meta content="name=版权声明;action-uri=/licence;icon-uri=/favicon.ico" name="msapplication-task" />
+	<title>zubinJiang  web技术博客 | 智慧在于共享和交流 |  </title>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有文章" href="http://wordpress007.sinaapp.com/?feed=rss2" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - 所有评论" href="http://wordpress007.sinaapp.com/?feed=comments-rss2" />
+	<link rel="pingback" href="http://wordpress007.sinaapp.com/xmlrpc.php" />
+
+	<!-- style START -->
+	<!-- default style -->
+	<style type="text/css" media="screen">@import url( http://wordpress007.sinaapp.com/wp-content/themes/inove/style.css );</style>
+	<!-- for translations -->
+			<link rel="stylesheet" href="http://wordpress007.sinaapp.com/wp-content/themes/inove/chinese.css" type="text/css" media="screen" />
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://wordpress007.sinaapp.com/wp-content/themes/inove/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!-- style END -->
+
+	<!-- script START -->
+	<script type="text/javascript" src="http://wordpress007.sinaapp.com/wp-content/themes/inove/js/base.js"></script>
+	<script type="text/javascript" src="http://wordpress007.sinaapp.com/wp-content/themes/inove/js/menu.js"></script>
+	<!-- script END -->
+
+	<link rel='stylesheet' id='admin-bar-css'  href='http://wordpress007.sinaapp.com/wp-includes/css/admin-bar.css?ver=20110622' type='text/css' media='all' />
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css'  href='http://wordpress007.sinaapp.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='codebox-css'  href='http://wordpress007.sinaapp.com/wp-content/plugins/wp-codebox/css/codebox.css?ver=0.1' type='text/css' media='screen' />
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/prototype.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/scriptaculous/wp-scriptaculous.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/scriptaculous/effects.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-content/plugins/lightbox-2/lightbox.js?ver=1.8'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-content/plugins/wp-codebox/js/codebox.js?ver=0.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpress007.sinaapp.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wordpress007.sinaapp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='zubinJiang  web技术博客' href='http://wordpress007.sinaapp.com' />
+<meta name="generator" content="WordPress 3.2.1" />
+
+<script type="text/javascript"><!--
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='http://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el)a2a.init('page',{target:el});wpa2a.done=true;}}};a2a_config.tracking_callback=['ready',wpa2a.script_onready];a2a_localize = {
+	Share: "分享",
+	Save: "收藏",
+	Subscribe: "订阅",
+	Email: "电子邮件",
+    Bookmark: "书签",
+	ShowAll: "显示全部服务",
+	ShowLess: "显示部分服务",
+	FindServices: "查找服务",
+	FindAnyServiceToAddTo: "动态查找任何用以添加的服务",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "通过电子邮件分享",
+	SubscribeViaEmail: "通过电子邮件订阅",
+	BookmarkInYourBrowser: "添加为浏览器书签",
+	BookmarkInstructions: "按下 [Ctrl+D] 或 [Cmd+D] 将本页加为书签",
+	AddToYourFavorites: "添加至收藏夹",
+	SendFromWebOrProgram: "从任何电子邮件地址或电子邮件程序发送",
+    EmailProgram: "电子邮件程序"
+};
+
+//--></script>
+
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://wordpress007.sinaapp.com/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script>
+	<!-- end lightbox scripts -->
+<!-- Social Medias Connect 1.7.2 by qiqiboy support Fcebook, RenRen, KaiXin, SINA weibo, Tencent weibo, SOHU weibo, Douban, Twitter...connection with WordPress --><script type="text/javascript" src="http://wordpress007.sinaapp.com/wp-content/plugins/social-medias-connect/js/social-medias-connect.js?s=1.7.2"></script><link rel="stylesheet" media="all" href="http://wordpress007.sinaapp.com/wp-content/plugins/social-medias-connect/style.css?s=1.7.2" type="text/css" /><!-- End Social Medias Connect 1.7.2 --><meta name='wumiiVerification' content='32beaa67-b2a8-4ff8-9867-cdaaade1fbb5' />
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
+<!--[if IE]>
+<style type="text/css">
+.addtoany_list a img{filter:alpha(opacity=70)}
+.addtoany_list a:hover img,.addtoany_list a.addtoany_share_save img{filter:alpha(opacity=100)}
+</style>
+<![endif]-->
+
+</head>
+
+
+
+<body onload="getDataTime();">
+
+
+<!-- wrap START -->
+<div id="wrap">
+
+
+<!-- container START -->
+<div id="container"  >
+
+<!-- header START -->
+<div id="header">
+	<!-- banner START -->
+		<!-- banner END -->
+
+	<div id="caption">
+		<h1 id="title"><a href="http://wordpress007.sinaapp.com/">zubinJiang  web技术博客</a></h1>
+		<div id="tagline">智慧在于共享和交流 wordpress007.sinaapp.com</div>
+	</div>
+
+	<div class="fixed"></div>
+</div>
+<!-- header END -->
+
+<!-- navigation START -->
+<div id="navigation">
+	<!-- menus START -->
+	<ul id="menus">
+		<li class="current_page_item"><a class="home" title="首页" href="http://wordpress007.sinaapp.com/">首页</a></li>
+			<li class="cat-item cat-item-3"><a href="http://wordpress007.sinaapp.com/?cat=3" title="php&amp;python">web服务端开发</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://wordpress007.sinaapp.com/?cat=6" title="查看 其它 下的所有文章">其它</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://wordpress007.sinaapp.com/?cat=9" title="查看 开源 下的所有文章">开源</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://wordpress007.sinaapp.com/?cat=7" title="mysql&amp;mongodb">数据库</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://wordpress007.sinaapp.com/?cat=4" title="evernote">日志</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://wordpress007.sinaapp.com/?cat=13" title="chrome&amp;firefox">浏览器</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://wordpress007.sinaapp.com/?cat=10" title="git&amp;svn&amp;cvs">版本控制器</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://wordpress007.sinaapp.com/?cat=5" title="linux&amp;macos&amp;ios&amp;windows">系统</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://wordpress007.sinaapp.com/?cat=1" title="查看 默认 下的所有文章">默认</a>
+</li>
+		<li><a class="lastmenu" href="javascript:void(0);"></a></li>
+	</ul>
+	<!-- menus END -->
+
+	<!-- searchbox START -->
+	<div id="searchbox">
+					<form action="http://wordpress007.sinaapp.com" method="get">
+				<div class="content">
+					<input type="text" class="textfield" name="s" size="24" value="" />
+					<input type="submit" class="button" value="" />
+				</div>
+			</form>
+			</div>
+<script type="text/javascript">
+//<![CDATA[
+	var searchbox = MGJS.$("searchbox");
+	var searchtxt = MGJS.getElementsByClassName("textfield", "input", searchbox)[0];
+	var searchbtn = MGJS.getElementsByClassName("button", "input", searchbox)[0];
+	var tiptext = "请输入关键字...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+	searchbtn.onclick = function(e) {
+		if(searchtxt.value == "" || searchtxt.value == tiptext) {
+			return false;
+		}
+	}
+//]]>
+</script>
+	<!-- searchbox END -->
+
+	<div class="fixed"></div>
+</div>
+<!-- navigation END -->
+
+<!-- content START -->
+<div id="content">
+
+	<!-- main START -->
+	<div id="main">
+
+
+	<div class="post" id="post-175">
+		<h2><a class="title" href="http://wordpress007.sinaapp.com/?p=175" rel="bookmark">git 的方法小结</a></h2>
+		<div class="info">
+			<span class="date">2012年8月29日</span>
+			<span class="author"><a href="http://wordpress007.sinaapp.com/?author=1" title="由 异步 发布" rel="author">异步</a></span>			<span class="editpost"><a class="post-edit-link" href="http://wordpress007.sinaapp.com/wp-admin/post.php?post=175&amp;action=edit" title="编辑文章">编辑</a></span>			<span class="comments"><a href="http://wordpress007.sinaapp.com/?p=175#respond" title="《git 的方法小结》上的评论">没有评论</a></span>
+			<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<pre> git 的方法小结                          
+
+由于自己平常git用的不多不熟练，最近写个小东西并把代码托管到github，才发现之前看的《Pro Git》和《看日记学git》完全打水漂。重翻《Pro Git》，把一些重要的常见的命令记下来，备忘，具体的请man。
+符号约定：
+[]：可选　　&lt;&gt;：必选
+Git 配置
+
+git config [--global] user.name &lt;name&gt;　　　　　　　　设置用户名
+git config [--global] user.email &lt;email&gt;　　　　　　 　　设置邮箱
+git config [--global] core.editor &lt;editor&gt;　　　　　　　　设置编辑器
+git config [--global] github.user &lt;user&gt;　　　　　　 　　设置github帐号名
+git config [--global] github.token &lt;token&gt;　　　　　　　 设置github的token
+--global是对当前系统用户的全局设置，在～/.gitconfig中。对系统所有用户进行配置，/etc/gitconfig。对当前项目，.git/config
+Git 创建库
+
+git clone &lt;url&gt;　　　　　　　　　　　　　　　　　　　ssh/http(s)/git三种协议，ssh和https可推送
+git init　　　　　　　　　　　　　　　　　　　　　　  初始化Git仓库
+Git 日常操作
+
+git add &lt;file&gt;　　　　　　　　　　　　　　　  将文件加入index file
+git rm [--cached]　　　　　　　　　　　　　   删除，加--cached表示仅从index file中删除文件，即放弃跟踪
+git mv &lt;src&gt; &lt;dest&gt;　　　　　　　　　　　　 移动/更名
+git diff --cached/--staged　　　　　　　　　　当前索引与上次提交（有哪些需要commit）
+git diff　　　　　　　　　　　　　　　　　     当前索引与工作目录（有哪些需要add）
+git diff HEAD[^]　　　　　　　　　　　　　　 工作目录与上次提交（当前目录与上次提交有何改变）
+git commit [-a] -m &lt;msg&gt;　　　　　　　　　　提交
+git commit --amend [-m &lt;msg&gt;]　　　　　　　修复上次提交
+git reset HEAD &lt;file&gt;　　　　　　　　　　　  同--mixed，default option
+git reset --mixed HEAD　　　　　　　　　　  撤销 commit 和index file,只保留 working tree 的信息
+git reset --hard HEAD[^]　　　　　　　　　　 将 working tree 和 index file 都撤销到以前状态
+git reset --soft HEAD[^]　　　　　　　　　　  只撤销 commit,而保留 working tree 和 index file 的信息
+　　　　　　　　　　　　　　　　　　　　　回复到某个状态。以git reset --soft HEAD为例，commit回退到
+　　　　　　　　　　　　　　　　　　　　　HEAD（相当于无变化），若是HEAD^，则commit回退到HEAD^
+git gc　　　　　　　　　　　　　　　　　　   用垃圾回收机制清除由于 reset 而造成的垃圾代码
+git status　　　　　　　　　　　　　　　　　 显示当前工作目录状态
+git log [-p]　　　　　　　　　　　　　　　　   显示提交历史（many useful options to be learned）
+git branch [branch]　　　　　　　　　　　　   显示/新建分支
+git branch -d/-D　　　　　　　　　　　　　　 删除分支（d表示“在分支合并后删除分支”，D表示无论如何都删除分支）
+git show-branch
+git checkout &lt;branch&gt;　　　　　　　　　　　 切换分支（分支未commit无法切换）
+git merge &lt;branch&gt;　　　　　　　　　　　　  合并分支
+git merge == git pull .
+git show &lt;branch | commit | tag | etc&gt;　　　     显示对应对象的信息
+git grep &lt;rep&gt; [object]　　　　　　　　　　　  （在指定对象（历史记录）中）搜索　　　　　　　　
+git cat-file 　　　　　　　　　　　　　　　　   查看数据
+git cat-file &lt;-t | -s | -e | -p | (type)&gt; &lt;object&gt;        type can be one of: blob, tree, commit, tag
+git ls-files [--stage]　　　　　　　　　　　　　 show information about files in the index and the working tree（实际是查看索引文件）
+git watchchanged &lt;since&gt;..&lt;until&gt;　　　　　　 显示两个commit（当然也可以是branch）的区别
+git remote [-v]　　　　　　　　　　　　　　    　　显示远程仓库，加-v选项可显示仓库地址
+git remote add &lt;repo_name&gt; &lt;url&gt;　　　　　  　　添加远程仓库，repo_name为shortname，指代仓库地址
+git remote rename &lt;old_name&gt; &lt;new_name&gt;  　　更名
+git remote rm &lt;repo_name&gt;　　　　　　　　　　  删除远程仓库
+git remote show &lt;repo_name&gt;　　　　　　　　　 查看远程仓库信息
+git remote fetch &lt;repo_name&gt;　　　　　　　　　  从远程仓库抓取数据（并不合并）
+git pull &lt;repo_name&gt; &lt;branch_name&gt;　　　　　　拉去数据并合并到当前分支
+git push &lt;repo_name&gt; &lt;branch_name&gt;　　　　　 推送指定分支到指定仓库
+git fetch &lt;repo_name&gt; &lt;branch_name&gt;[:&lt;local_branch_name&gt;]　　　　拉去数据，未合并
+Git 标签
+
+git 标签相关……
+Git 相关环境变量
+
+GIT_DIR: 如果指定了那么git init将会在GIT_DIR指定的目录下创建版本库
+GIT_OBJECT_DIRECTORY: 用来指示对象存储目录的路径。即原来$GIT_DIR/objects下的文件会置于该变量指定的路径下
+Git 常见变量
+
+HEAD: 表示最近一次的 commit。
+MERGE_HEAD: 如果是 merge 产生的 commit,那么它表示除 HEAD 之外的另一个父母分支。
+FETCH_HEAD: 使用 git-fetch 获得的 object 和 ref 的信息都存储在这里,这些信息是为日后 git-merge 准备的。
+HEAD^: 表示 HEAD 父母的信息
+HEAD^^: 表示 HEAD 父母的父母的信息
+HEAD~4: 表示 HEAD 上溯四代的信息
+HEAD^1: 表示 HEAD 的第一个父母的信息
+HEAD^2: 表示 HEAD 的第二个父母的信息
+COMMIT_EDITMSG: 最后一次 commit 时的提交信息。
+
+TO BE FINISHED！</pre>
+<div class="addtoany_share_save_container"><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_1"><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save"><img src="http://wordpress007.sinaapp.com/wp-content/plugins/add-to-any/share_save_256_24.png" width="256" height="24" alt="Share"/></a></div>
+<script type="text/javascript"><!--
+wpa2a.script_load();
+//--></script>
+</div>			<div class="fixed"></div>
+		</div>
+		<div class="under">
+			<span class="categories">分类: </span><span><a href="http://wordpress007.sinaapp.com/?cat=10" title="查看 版本控制器 中的全部文章" rel="category">版本控制器</a></span>			<span class="tags">标签: </span><span></span>		</div>
+	</div>
+	<div class="post" id="post-170">
+		<h2><a class="title" href="http://wordpress007.sinaapp.com/?p=170" rel="bookmark">UNIX下基本VI命令</a></h2>
+		<div class="info">
+			<span class="date">2012年8月25日</span>
+			<span class="author"><a href="http://wordpress007.sinaapp.com/?author=1" title="由 异步 发布" rel="author">异步</a></span>			<span class="editpost"><a class="post-edit-link" href="http://wordpress007.sinaapp.com/wp-admin/post.php?post=170&amp;action=edit" title="编辑文章">编辑</a></span>			<span class="comments"><a href="http://wordpress007.sinaapp.com/?p=170#respond" title="《UNIX下基本VI命令》上的评论">没有评论</a></span>
+			<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<p><strong>UNIX下基本VI命令</strong></p>
+<p>[语法]：vi [-wn] [-R] 文件&#8230;<br />
+[说明]: vi 是一个基于行编辑器 ex 上的全屏幕编辑器，可以在vi中使用ex，ed的全部命令，vi选项中 -wn 指将编辑窗口大小置为n行，-R为将编辑的文件置为只读模式， vi工作模式分为命令模式和输入模式，一般情况下在命令模式下，可敲入vi命令，进入输入模式下时可以编辑要编辑的文本，命令 a A i I o O c C s S R 可进入输入模式，在输入模式下按 ESC 键可推出输入模式，回到命令模式，在命令模式中敲入：命令，则可进入ex方式，在屏幕底部出现提示符 ： ，此时可使用任意ex命令，屏幕底行也用来作/ ? ! 命令的提示行，大多数命令可以在其前面加数字，表示命令执行的重复次数，下面简单介绍一下vi 的命令集，^ 表示(CTRL)键<br />
+^B 退回前一页，前面加数字表示重复次数，每次换页时保留上一页的两行<br />
+^D 在命令模式下，表示下滚屏幕的一半，在输入模式下，表示回退至左边的自动缩进处<br />
+^E 显示屏幕底线之下的一行<br />
+^F 前进一页，前面加数字表示重复次数，每次换页时保留上一页的两行<br />
+^G 显示当前文件名，当前行号和文件总行数，并用百分号当前行在整个文件中的位置<br />
+^H(退格) 在命令模式下，光标左移一格；在输入模式下，删去前面的字符<br />
+^I(TAB) 在输入模式下，产生一串空格<br />
+^J(LF) 光标下移一行<br />
+^L 刷新屏幕，即将屏幕重新显示<br />
+^M(回车) 在命令模式下，光标移动至下行开头在输入模式下，开辟一新行<br />
+^N 光标下移一行<br />
+^P 光标上移一行<br />
+^Q 在输入模式下，将其后的非打印字符作为正文插入<br />
+^R 刷新屏幕<br />
+^U 屏幕上滚一半，前面加数字时表示上滚的行数，此数字对以后的^D ^U 命令有效<br />
+^V 在输入模式下，将其后的非打印字符作为正文插入<br />
+^W 在输入模式下，使光标回退一个字<br />
+^Y 显示屏幕底线之上的一行<br />
+^Z 暂停编辑，退回上层Shell<br />
+^[(ESC) 退出输入模式，回到命令模式<br />
+! 暂时退出编辑，执行Shell命令<br />
+<em>"</em>(双引号) 用于标志有名缓冲区，编号缓冲区1-9用于保存被删去的正文，字母名缓冲区a-z供用户存放自定义的正文<br />
+$ 将光标移动到当前行尾，前加数字则表示前移行数，如2$表示移动到下一行行尾<br />
+% 将光标移动到配对的小括号()或大括号{}上去<br />
+( 退回句子开头<br />
+) 前移到句子开头<br />
+- 退到上一行第一个非空格字符<br />
+. 重复上一次改变缓冲区内容的命令<br />
+/ 模式 向前搜索模式，将光标移动到模式出现处，模式是一个正规表达式，(参看 grep)<br />
+： 在屏幕底部提示：，其后可使用ex命令<br />
+? 功能同 / ，但方向是向前查找<br />
+[[ 光标回退至前一节分界处<br />
+\ 转意符<br />
+]] 光标前移至节分界处<br />
+^(不是CTRL) 光标移至当前行第一个非空字符上<br />
+<em>&#8216;</em> 连续两个<em>”</em>表示将光标移至其移动前的位置，<em>&#8216;</em>后跟字母表示光标字母标记的行首(参看 m 命令)</p>
+<p>A 在行尾插入正文，进入输入模式<br />
+B 光标回退一个字<br />
+C 替换光标后的内容<br />
+D 删除光标后的内容<br />
+E 光标前移到字尾<br />
+F 字符 在当前行向左查找指定字符<br />
+G 光标移动到其前面数字指定的行，若未指定则移动到最后一行<br />
+H 光标移动到屏幕顶行，若前面有数字，则移动到屏幕上该数字指定的行<br />
+I 在行开头插入正文<br />
+J 连接两行，若前面有数字则连接数字指定的行<br />
+L 光标移动到屏幕底行，若前面有数字，则移动到屏幕底线往上数该数字指定的行<br />
+M 光标移动到屏幕中线<br />
+N 使用模式查找/或?时，重复找下一个匹配的模式，但方向与上次相反，其功能同 n ，但方向相反<br />
+O 在当前行上开辟一新行<br />
+P 将上次被删除的正文插入光标前面，可在其前面加缓冲区编号，编号1-9用于保存被删去的正文，字母名缓冲区a-z供用户存放自定义的正文<br />
+Q 从vi 推出进入ex命令状态<br />
+R 替换字符串<br />
+S 替换整行<br />
+T 字符 向左查找字符<br />
+U 将当前行恢复至第一次修改前的状态<br />
+W 光标移至下一个字首<br />
+X 删除光标前的字符<br />
+Y 将当前行存入无名缓冲区，前面加数字表示存入的行数，也可用有名缓冲区来保存，以后可用命令p或P将其取出<br />
+ZZ 存盘退出vi<br />
+a 光标后插入正文<br />
+b 光标回退至上一个字首<br />
+cw 替换当前字<br />
+c) 替换当前句子<br />
+dw 删除一个字<br />
+dd 删除一行<br />
+e 光标移到下一个字末<br />
+f 字符 在当前行向前查找字符<br />
+h 光标左移一格<br />
+i 在光标前插入正文<br />
+j 光标下移一行<br />
+k 光标上移一行<br />
+l 光标右移一格<br />
+m 字母 用字母标记当前行，以后可用 <em>&#8216;</em>字母使光标移动到当前行，(参看<em>&#8216;</em>命令)<br />
+n 重复上次 / 或 ? 命令<br />
+o 在当前行下开辟一新行<br />
+p 将用户缓冲区内容放到光标位置(参看P命令)<br />
+r 替换当前字符<br />
+s 用一串字符替换当前字符<br />
+t 字符 光标移动至字符前<br />
+u 取消上次操作<br />
+w 光标移至下一字首<br />
+x 删除当前字符<br />
+yw 将当前字存入无名缓冲区，前面可加<em>“</em>x，表示存入名字为x的有名缓冲区(x为a-z)，也可加数字表示存入的字数，以后可用P或p命令取出<br />
+yy 将当前行存入无名缓冲区，用法参看yw<br />
+{ 光标移动至前一段开头<br />
+| 光标移至行首，若前面加数字，则移到数字指定行的行首<br />
+} 光标移至下一段开头在：提示符下，常用命令如下:<br />
+：w 当前文件存盘<br />
+：w! 强制存盘<br />
+：w 文件 将内容写入指定文件<br />
+：w! 文件 强制写入指定文件<br />
+：x，y w 文件 将 x至 y 行写入指定文件中<br />
+：r 文件 将文件读到光标位置<br />
+：r ! 命令 将系统命令的输出读到光标位置<br />
+：q 退出编辑<br />
+：q! 强制退出<br />
+：x 与命令ZZ相同<br />
+：e 文件名 编辑另一文件<br />
+：e ! 重新编辑文件，放弃任何改变<br />
+：sh 执行sh，结束后回到编辑<br />
+：! 命令 执行命令后回到编辑<br />
+：n 编辑下一文件<br />
+：n 文件表 重新定义待编辑文件表<br />
+：set 设置 vi 的选项，例如 set nu 表示每行前显示行号，在选项前加no则表示清除该选项，例如 set nonu 表示每行前不显示行号，下面是一些常用的选项:<br />
+ai 自动缩进<br />
+aw 编辑下一文件前自动存盘<br />
+ic 查找字符串时不区分大小写<br />
+nu 每行前显示行号<br />
+sm 输入)及}时显示与之配对的( 或 {<br />
+slow 插入时延迟屏幕刷新<br />
+ws 使查找能绕过文件尾从头进行<br />
+wa 写文件之前不作对文件的检查</p>
+<div class="addtoany_share_save_container"><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_2"><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save"><img src="http://wordpress007.sinaapp.com/wp-content/plugins/add-to-any/share_save_256_24.png" width="256" height="24" alt="Share"/></a></div></div>			<div class="fixed"></div>
+		</div>
+		<div class="under">
+			<span class="categories">分类: </span><span><a href="http://wordpress007.sinaapp.com/?cat=6" title="查看 其它 中的全部文章" rel="category">其它</a></span>			<span class="tags">标签: </span><span></span>		</div>
+	</div>
+	<div class="post" id="post-168">
+		<h2><a class="title" href="http://wordpress007.sinaapp.com/?p=168" rel="bookmark">Discuz!模板风格制作</a></h2>
+		<div class="info">
+			<span class="date">2012年8月25日</span>
+			<span class="author"><a href="http://wordpress007.sinaapp.com/?author=1" title="由 异步 发布" rel="author">异步</a></span>			<span class="editpost"><a class="post-edit-link" href="http://wordpress007.sinaapp.com/wp-admin/post.php?post=168&amp;action=edit" title="编辑文章">编辑</a></span>			<span class="comments"><a href="http://wordpress007.sinaapp.com/?p=168#respond" title="《Discuz!模板风格制作》上的评论">没有评论</a></span>
+			<div class="fixed"></div>
+		</div>
+		<div class="content">
+			<p><strong>Discuz!</strong><strong>模板风格制作</strong></p>
+<p>1、在Photoshop中制作风格页面并切图保存；</p>
+<p>&nbsp;</p>
+<p>2、制作html文档，css调整；</p>
+<p>在制作html文件之前，您必须熟悉Discuz ! 模板的元素和css。需要注意的是，在定制您的css的时候建议您参</p>
+<p>&nbsp;</p>
+<p>考Discuz！模板文件css.htm来制作，这样您所制作出来的模板文件就可以方便的在Discuz !管理后台中作调整。</p>
+<p>&nbsp;</p>
+<p>制作一套新的模板，其实并不需要将上面所有模板文件重新制作，只需要将几个必要的文件进行替换成您所制作的风格模板文件即可（当然，如果您觉得必要，可以将每个模板文件根据您的设计风格进行调整，只要保证模板文件中的程序结构完整），以下几个文件是一个论坛中最常用到的几个页面，对一套风格模板影响相对较大，详细如下:</p>
+<p>1、header.htm                    &#8212; 页面头部</p>
+<p>2、discus.htm                     &#8212; 论坛首页内容部分</p>
+<p>3、index_header.htm                          &#8212; 头部发帖按钮，和公告内容页。</p>
+<p>4、footer.htm                      &#8212; 页面底部</p>
+<p>5、viewthread.htm                     &#8212; 查看帖子内容</p>
+<p>6、css_common.htm                           &#8212; 公共样式css样式页面</p>
+<p>7、css_script.htm                       &#8212; 其他常用css样式页面</p>
+<p>8、viewthread.htm                     &#8212; 阅读主题</p>
+<p>9、forumdisplay.htm                            &#8212; 论坛主题列表</p>
+<p>10、forumdisplay_subforum.htm                &#8212; 子论坛列表</p>
+<p>当然刚开始接触模板制作也可以只修改其中的一部分，只要将css.htm，header.htm，footer.htm这三个文件按照您的风格制作出来就可以让模板风格作变换，其他文件也可以根据您对风格的要求进行调整。</p>
+<p>Discuz!模板文件的简单讲解:</p>
+<p>刚接触discuz！模板文件，您会发现在这些htm文件中包含着很多像：</p>
+<p>&lt;!&#8211;{if $discuz_uid}&#8211;&gt;……&lt;!&#8211;{else}&#8211;&gt;……&lt;!&#8211;{/if}&#8211;&gt;</p>
+<p>{template css}</p>
+<p>&lt;!&#8211;{loop $plugins['links'] $plugin}&#8211;&gt;……&lt;!&#8211;{/loop}&#8211;&gt;</p>
+<p>$charset</p>
+<p>{lang memberlist}</p>
+<p>{MAINTABLECOLOR}</p>
+<p>这样6类在一般htm文件中不常见的语句和变量，这些语句是Discuz!模版中的特有语句，具体说明如下：</p>
+<p>&lt;!&#8211;{if ×××}&#8211;&gt;……&lt;!&#8211;{else}&#8211;&gt;……&lt;!&#8211;{/if}&#8211;&gt;</p>
+<p>这类语句并非普通HTML中的注释语句，而是Discuz!特有的模板判断语法，就好比php或者其他语法中的 if,else,then等等。 通过这些语法，来控制一些功能的显示控制等效果。</p>
+<p>{template ×××}</p>
+<p>这类语句是模板调用语句，比如在某个模板中，想调用另一个模板中的内容，可以通过上面的语句对其他模板文件进行调用，比如在header.htm模板文件中的{template css}，将css.htm模板文件调入。index.htm模板文件中最顶有 {template header}，最底有 {template footer}，分别调入的是header.htm和footer.htm两个模板文件，这样根据页面结构和功能的细分，使Discuz!模板的设计制作更为灵活，方便。</p>
+<p>&nbsp;</p>
+<p>&lt;!&#8211;{loop ×××}&#8211;&gt;……&lt;!&#8211;{/loop}&#8211;&gt;</p>
+<p>这类语句为循环语句，循环执行内部程序，直到数据输出完毕结束。通过这些语句，能够达到把同一系列的资料进行循环显示效果，常见的如论坛列表、帖子列表等。</p>
+<p>$×××</p>
+<p>这样以$开头的是Discuz! 参数和变量，一般情况下不建议修改。另外还有一些是Discuz! 固定参数，如：</p>
+<p>$seohead                                      ——后台设置的头部信息</p>
+<p>$charset                              —— config.inc.php中设置语言字符集，必不可少，不能删除！</p>
+<p>$extrahead                                  —— 控制论坛自动跳转参数，必不可少，不能删除！</p>
+<p>&nbsp;</p>
+<p>{lang ×××}</p>
+<p>这类以lang开头的是Discuz!语言包调用语句，后面的变量可以在语言包文件中找到相对应的字段，在模板中所调用的大部分都是  templates.lang.php 文件中的，如下，左侧为模版文件中调用语句，右侧为语言包中对应字段：（用户可以根据自己的需求对语言包进行修改）</p>
+<p>{lang pm}                             &#8216;pm&#8217; =&gt; &#8216;短消息&#8217;</p>
+<p>{lang admincp}                                      &#8216;admincp&#8217; =&gt; &#8216;系统设置&#8217;</p>
+<p>{lang memberlist}                       &#8216;memberlist&#8217; =&gt; &#8216;会员&#8217;</p>
+<p>&nbsp;</p>
+<p>{×××}</p>
+<p>{IMGDIR}这类括弧内大写的变量是Discuz!风格配色方案中的参数，可根据您的需要通过后台定义新的风格变量。</p>
+<p>&nbsp;</p>
+<p>3、通过Discuz!管理后台新增模板：</p>
+<p>图片和html文档制作好，css调整好以后我们就可以通过管理后台来定义新的风格了。</p>
+<p>首先，将图片和htm模板文件上传到相应的目录，现在制作这套模板叫test，那么我们就在images目录和templates目录下分别建立一个test目录。</p>
+<p>images/test文件夹用于存放这套模板的图片，把在第1步中切好的所有图片保存到这个文件夹中。</p>
+<p>templates/test文件夹用于存放这套模板的htm文件，先从templates/default/目录中复css.htm、header.htm、</p>
+<p>footer.htm这三个文件，到这个文件夹中。</p>
+<p>接下来的工作都要在论坛后台设置中来完成</p>
+<p>（1）进入论坛点击 “界面——&gt; 模板管理”，  在新增模板后填入模板名称，模板文件所在目录，板权信息然后提交即可！</p>
+<p>&nbsp;</p>
+<p>（2）在“界面 ——&gt;风格管理” 中，在新增界面风格后填入方案名称然后提交即可！</p>
+<p>（3）提交方案名称后，您就可以在界面风格中看到您所定义的新的风格方案。</p>
+<p>到此，一套新的风格模板方案就添加到模板库里了，但还不是我们需要的最终效果，接下来要对模板文件继续进行调整，以达到模板的最终效果。</p>
+<p>（4）点击  [详情] 后就可以进入该模板的风格配色方案的编辑页面，您会发现，页面中的文本框内大部分都是空白的，这是因为我们之前添加到templates/test 中的 css.htm 是默认模板，需要根据我们所设计的风格把各个对应参数填入相应位置就可以了。</p>
+<p>（5）在制作界面方案  navy blue 的时候作者自定义了几个 css，主要是用来控制用登陆信息部分的文字颜色、背景，为了方便调整，将这些颜色和背景图片通过后台定义成变量。（{HMIMG1}－menu_left.gif，{HMIMG2}－menu_right.gif，hmtextcolor－#FFFFFF）</p>
+<p>&nbsp;</p>
+<p>注意：Discuz！管理后台的编辑界面方案功能，可以很方便的定义新的变量，用来控制设计者所定义的css样式表，所以在写css的时候如果您需要按照您的需求来制作新的css，在后台中将您所定义的css中的颜色、字体、字号、等参数值（宽度、高度、百分比等）定义成新的变量，这样在制作风格模板的时候方便调整</p>
+<p>（6）需要注意的是，在 css.htm 模板文件中，需要把右侧的替换内容用这些自定义变量名来替代，这些变量才可以起到作用。我们打开“界面 ——&gt; 模板管理”，点击 test 模板后面的  [详情] ，进入模板维护界面。</p>
+<p>（7）您会看到，这这个页面中包含 css，footer，header 三个模板文件，这三个文件是我们之前通过 default 目录复制过来的默认模板文件。我们要将这些文件的内容替换成我们自己的模板文件内容才可以，点击 css  后的 [编辑] 进入模板文件编辑页面，将自己定义的 css 粘贴到默认css 模板文件。</p>
+<p>（8）接下来，我们将自定义 css 中的颜色值和背景图片用之前在风格配色方案定义的变量替换，提交后，这样这些变量就可以通过后台来调整了。</p>
+<p>（9）最后一步，因为这套模板 footer 部分未作调整，只要将 header 部分替换成自己制作的内容就可以了，点击 header 后的 [编辑]进入模板文件编辑页面，将自己制作好的 header.htm 代码替换原始 header.htm 代码，提交。</p>
+<p>（10）进入“工具 ——&gt;更新缓存”，在前台选择你做好色风格浏览就可以了。</p>
+<p>自此，整套模板的制作到此结束。如果您的编码能力比较强，模板文件这部分完全可以在 Discuz! 后台直接进行编辑，不过还是建议先在一些工具软件里编辑后检验一下，这样能避免一些不必要的错误。</p>
+<div class="addtoany_share_save_container"><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_3"><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save"><img src="http://wordpress007.sinaapp.com/wp-content/plugins/add-to-any/share_save_256_24.png" width="256" height="24" alt="Share"/></a></div></div>			<div class="fixed"></div>
+		</div>
+		<div class="under">
+			<span class="categories">分类: </span><span><a href="http://wordpress007.sinaapp.com/?cat=6" title="查看 其它 中的全部文章" rel="category">其它</a></span>			<span class="tags">标签: </span><span></span>		</div>
+	</div>
+
+<div id="pagenavi">
+			<span class="newer"></span>
+		<span class="older"><a href="http://wordpress007.sinaapp.com/googlebd51f3588ed035d0.html/?paged=2" >下一页</a></span>
+		<div class="fixed"></div>
+</div>
+
+	</div>
+	<!-- main END -->
+
+	
+<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- sidebar north START -->
+<div id="northsidebar" class="sidebar">
+
+	<!-- feeds -->
+	<div class="widget widget_feeds">
+		<div class="content">
+		
+			
+			<div id="subscribe">
+				<a rel="external nofollow" id="feedrss" title="订阅这个博客的文章" href="http://wordpress007.sinaapp.com/?feed=rss2">订阅</a>
+									<ul id="feed_readers">
+						<li id="google_reader"><a rel="external nofollow" class="reader" title="订阅到 Google" href="http://fusion.google.com/add?feedurl=http://wordpress007.sinaapp.com/?feed=rss2"><span> Google</span></a></li>
+						<li id="youdao_reader"><a rel="external nofollow" class="reader" title="订阅到有道" href="http://reader.youdao.com/#url=http://wordpress007.sinaapp.com/?feed=rss2"><span>有道</span></a></li>
+						<li id="xianguo_reader"><a rel="external nofollow" class="reader" title="订阅到鲜果" href="http://www.xianguo.com/subscribe.php?url=http://wordpress007.sinaapp.com/?feed=rss2"><span>鲜果</span></a></li>
+						<li id="zhuaxia_reader"><a rel="external nofollow" class="reader" title="订阅到抓虾" href="http://www.zhuaxia.com/add_channel.php?url=http://wordpress007.sinaapp.com/?feed=rss2"><span>抓虾</span></a></li>
+						<li id="yahoo_reader"><a rel="external nofollow" class="reader" title="订阅到 My Yahoo!"	href="http://add.my.yahoo.com/rss?url=http://wordpress007.sinaapp.com/?feed=rss2"><span> My Yahoo!</span></a></li>
+						<li id="newsgator_reader"><a rel="external nofollow" class="reader" title="订阅到 newsgator"	href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://wordpress007.sinaapp.com/?feed=rss2"><span> newsgator</span></a></li>
+						<li id="bloglines_reader"><a rel="external nofollow" class="reader" title="订阅到 Bloglines"	href="http://www.bloglines.com/sub/http://wordpress007.sinaapp.com/?feed=rss2"><span> Bloglines</span></a></li>
+						<li id="inezha_reader"><a rel="external nofollow" class="reader" title="订阅到哪吒"	href="http://inezha.com/add?url=http://wordpress007.sinaapp.com/?feed=rss2"><span>哪吒</span></a></li>
+					</ul>
+							</div>
+						<div class="fixed"></div>
+		</div>
+	</div>
+
+	<!-- showcase -->
+	
+
+	<!-- posts -->
+	
+	<div class="widget">
+		<h3>Random Posts</h3>
+		<ul>
+			<li><a href="http://wordpress007.sinaapp.com/?p=153">DISCUZ ucenter 系统中关于注册用户采用32位密码的问题</a></li><li><a href="http://wordpress007.sinaapp.com/?p=4">WordPress System</a></li><li><a href="http://wordpress007.sinaapp.com/?p=156">http请求返回值详解</a></li><li><a href="http://wordpress007.sinaapp.com/?p=41">php 获取当前URL</a></li><li><a href="http://wordpress007.sinaapp.com/?p=6">WordPress Pass  Point</a></li>		</ul>
+	</div>
+
+	<!-- recent comments -->
+	
+	<!-- tag cloud -->
+	<div id="tag_cloud" class="widget">
+		<h3>Tag Cloud</h3>
+			</div>
+
+</div>
+<!-- sidebar north END -->
+
+<div id="centersidebar">
+
+	<!-- sidebar east START -->
+	<div id="eastsidebar" class="sidebar">
+	
+		<!-- categories -->
+		<div class="widget widget_categories">
+			<h3>Categories</h3>
+			<ul>
+				<li class="categories">分类目录<ul>	<li class="cat-item cat-item-3"><a href="http://wordpress007.sinaapp.com/?cat=3" title="php&amp;python">web服务端开发</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://wordpress007.sinaapp.com/?cat=6" title="查看 其它 下的所有文章">其它</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://wordpress007.sinaapp.com/?cat=9" title="查看 开源 下的所有文章">开源</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://wordpress007.sinaapp.com/?cat=7" title="mysql&amp;mongodb">数据库</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://wordpress007.sinaapp.com/?cat=4" title="evernote">日志</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://wordpress007.sinaapp.com/?cat=13" title="chrome&amp;firefox">浏览器</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://wordpress007.sinaapp.com/?cat=10" title="git&amp;svn&amp;cvs">版本控制器</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://wordpress007.sinaapp.com/?cat=5" title="linux&amp;macos&amp;ios&amp;windows">系统</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://wordpress007.sinaapp.com/?cat=1" title="查看 默认 下的所有文章">默认</a>
+</li>
+</ul></li>			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar east END -->
+
+	<!-- sidebar west START -->
+	<div id="westsidebar" class="sidebar">
+	
+		<!-- blogroll -->
+		<div class="widget widget_links">
+			<h3>Blogroll</h3>
+			<ul>
+				<li><a href="http://www.cnblogs.com/yanghome/" title="http://www.cnblogs.com/yanghome/">Cnblogs</a></li>
+<li><a href="http://www.douban.com/people/yanghome/">Douban</a></li>
+<li><a href="https://www.facebook.com/zubin.jiang" title="https://www.facebook.com/zubin.jiang">Facebook</a></li>
+<li><a href="https://github.com/jiangzubin" title="https://github.com/jiangzubin">Github</a></li>
+<li><a href="http://pythno.appspot.com/" title="http://pythno.appspot.com/">Google App Engine</a></li>
+<li><a href="https://plus.google.com/u/0/113092468249844792023/posts" title="https://plus.google.com/u/0/113092468249844792023/posts">Google+</a></li>
+<li><a href="http://www.linkedin.com/profile/view?id=183760009&#038;trk=tab_pro" title="http://www.linkedin.com/profile/view?id=183760009&amp;trk=tab_pro">Linkedin</a></li>
+<li><a href="http://my.oschina.net/jiangzubin" title="http://my.oschina.net/jiangzubin">Oschina</a></li>
+<li><a href="http://jiangzubin.sinaapp.com/" title="http://jiangzubin.sinaapp.com/">Python</a></li>
+<li><a href="http://www.timger.info/" title="timger">Timger</a></li>
+<li><a href="https://twitter.com/zubinJiang" title="https://twitter.com/zubinJiang">Twitter</a></li>
+<li><a href="http://www.weibo.com/yangpage/profile?leftnav=1&#038;wvr=4&#038;mod=personinfo" title="http://www.weibo.com/yangpage/profile?leftnav=1&amp;wvr=4&amp;mod=personinfo">Weibo</a></li>
+<li><a href="http://www.weliveinbeijing.com/profile/1000035452/zubinjiang">Weliveinbeijing</a></li>
+<li><a href="http://yanghome.sinaapp.com" title="blog">YangHome</a></li>
+<li><a href="http://yanghome.sinaapp.com/" title="http://yanghome.sinaapp.com/">YangHome</a></li>
+<li><a href="http://www.zhihu.com/people/yanghome">Zhihu</a></li>
+			</ul>
+		</div>
+
+		</div>
+	<!-- sidebar west END -->
+	<div class="fixed"></div>
+</div>
+
+<!-- sidebar south START -->
+<div id="southsidebar" class="sidebar">
+
+	<!-- archives -->
+	<div class="widget">
+		<h3>Archives</h3>
+					<ul>
+					<li><a href='http://wordpress007.sinaapp.com/?m=201208' title='2012 年八月'>2012 年八月</a></li>
+	<li><a href='http://wordpress007.sinaapp.com/?m=201207' title='2012 年七月'>2012 年七月</a></li>
+			</ul>
+			</div>
+
+	<!-- meta -->
+	<div class="widget">
+		<h3>Meta</h3>
+		<ul>
+			<li><a href="http://wordpress007.sinaapp.com/wp-admin/">管理站点</a></li>			<li><a href="http://wordpress007.sinaapp.com/wp-login.php?action=logout&#038;_wpnonce=669bb4665e">登出</a></li>
+		</ul>
+	</div>
+                
+
+
+	
+        <div class="widget">
+                <h3>Tag Develop</h3>
+        </div>
+        <div width="100%" style="padding-left:10px;">
+        <div id="wpcumuluscontent3408423"><embed type="application/x-shockwave-flash" src="http://stblog.baidu-tech.com/wp-content/plugins/wp-cumulus/tagcloud.swf?r=4179456" width="225" height="255" id="tagcloudflash" name="tagcloudflash" bgcolor="#ffffff" quality="high" wmode="transparent" allowscriptaccess="always" flashvars="tcolor=0x000000&amp;tcolor2=0x68BCE2&amp;hicolor=0xE66D50&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e5%2589%258d%25e7%25ab%25af%27+class%3D%27tag-link-163%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E5%89%8D%E7%AB%AF%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e5%2589%258d%25e7%25ab%25af%25e6%258a%2580%25e6%259c%25af%27+class%3D%27tag-link-39%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e5%259b%25bd%25e9%2599%2585%25e5%258c%2596%27+class%3D%27tag-link-105%27+title%3D%273%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+12.540540540541pt%3B%27%3E%E5%9B%BD%E9%99%85%E5%8C%96%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e5%25a4%259a%25e5%25aa%2592%25e4%25bd%2593%27+class%3D%27tag-link-109%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E5%A4%9A%E5%AA%92%E4%BD%93%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%2580%25a7%25e8%2583%25bd%27+class%3D%27tag-link-41%27+title%3D%275%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+19.351351351351pt%3B%27%3E%E6%80%A7%E8%83%BD%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%258a%25bd%25e6%25a0%25b7%25e5%25ae%259e%25e9%25aa%258c%27+class%3D%27tag-link-137%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E6%8A%BD%E6%A0%B7%E5%AE%9E%E9%AA%8C%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%2595%25b0%25e6%258d%25ae%25e6%258c%2596%25e6%258e%2598%27+class%3D%27tag-link-9%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%2597%25a0%25e7%25ba%25bf%27+class%3D%27tag-link-83%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E6%97%A0%E7%BA%BF%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%25a3%2580%25e7%25b4%25a2%25e6%2589%25a9%25e5%25b1%2595%27+class%3D%27tag-link-126%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E6%A3%80%E7%B4%A2%E6%89%A9%E5%B1%95%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e6%25b5%2581%25e9%2587%258f%25e5%2588%2587%25e5%2588%2586%27+class%3D%27tag-link-138%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E6%B5%81%E9%87%8F%E5%88%87%E5%88%86%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e8%25af%25ad%25e4%25b9%2589%25e6%2590%259c%25e7%25b4%25a2%27+class%3D%27tag-link-123%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E8%AF%AD%E4%B9%89%E6%90%9C%E7%B4%A2%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e8%25af%25ad%25e9%259f%25b3%25e8%25af%2586%25e5%2588%25ab%27+class%3D%27tag-link-110%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D%25e8%25b4%25b4%25e5%2590%25a7%25e6%258a%2580%25e6%259c%25af%27+class%3D%27tag-link-20%27+title%3D%276%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+22pt%3B%27%3E%E8%B4%B4%E5%90%A7%E6%8A%80%E6%9C%AF%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3D3d%27+class%3D%27tag-link-48%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3E3d%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Dhtml5%27+class%3D%27tag-link-13%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3Ehtml5%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Djs%27+class%3D%27tag-link-47%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3Ejs%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Djs%25e4%25bb%25a3%25e7%25a0%2581%25e5%258e%258b%25e7%25bc%25a9%27+class%3D%27tag-link-164%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3Ejs%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Dlamp%27+class%3D%27tag-link-29%27+title%3D%274%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+16.324324324324pt%3B%27%3Elamp%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Dlinux%25e5%2586%2585%25e6%25a0%25b8%27+class%3D%27tag-link-120%27+title%3D%272%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+8pt%3B%27%3Elinux%E5%86%85%E6%A0%B8%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Fstblog.baidu-tech.com%2F%3Ftag%3Dphp%27+class%3D%27tag-link-32%27+title%3D%274%E4%B8%AA%E4%B8%BB%E9%A2%98%27+style%3D%27font-size%3A+16.324324324324pt%3B%27%3Ephp%3C%2Fa%3E%3C%2Ftags%3E"></div>
+        <div class="widget">
+                <h3>&nbsp;</h3>
+        </div>
+
+        <div class="widget" style="margin-bottom:10px;">
+                <h3>Tag Music</h3>
+        </div>
+        <div>
+        <embed src="http://www.xiami.com/widget/8811185_151128,375188,1768986144,377528,74790,75042,3450523,3479719,1769091135,58661,1769878352,1770700059,_235_346_FF8719_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+        </div>
+        </div>
+        <div class="widget">
+                <h3>&nbsp;</h3>
+        </div>
+
+        <div class="widget" style="margin-bottom:10px;">
+                <h3>Tag Weibo</h3>
+        </div>
+        <div>
+                <iframe width="100%" height="850" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=850&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2049178385&verifier=b53de27a&dpc=1"></iframe>
+        </div>
+
+        <div class="widget">
+                <h3>&nbsp;</h3>
+        </div>
+                
+	<div class="widget">
+		<a id="saelogo" href="http://yanghome.sinaapp.com/" target="_blank">
+		<img width="270" height="100"  src="http://yanghome.sinaapp.com/images/logo.png" title="Powered by Sina App Engine" /></a>
+	</div>
+
+	<div class="widget">
+		<script type="text/javascript">document.write('<iframe width="300" height="210" frameborder="0" scrolling="no" src="http://widget.weibo.com/relationship/bulkfollow.php?language=zh_cn&uids=2049178385,2213749574&wide=1&color=C2D9F2,FFFFFF,0082CB,666666&showtitle=1&showinfo=1&sense=0&verified=1&count=5&refer='+encodeURIComponent(location.href)+'&dpc=1"></iframe>')</script>
+	</div>
+</div>
+<!-- sidebar south END -->
+
+</div>
+<!-- sidebar END -->
+	<div class="fixed"></div>
+</div>
+<!-- content END -->
+
+<!-- footer START -->
+<div id="footer">
+	<a id="gotop" href="#" onclick="MGJS.goTop();return false;">回到顶部</a>
+	<!--<a id="powered" href="http://wordpress.org/">WordPress</a>-->
+	<div id="copyright">
+		版权所有 &copy; 2012 zubinJiang  web技术博客	</div>
+	<div id="themeinfo">
+		<span>
+			联系方式 ?
+			Weibo:<a href="http://www.weibo.com/yangpage">@yangpage</a>
+			&nbsp;&nbsp;Msn:jiangzubin1989@hotmail.com
+			&nbsp;&nbsp;Mail/Gtalk:jiangzubin1989@gmail.com
+		</span>
+		<!--主题由 <a href="http://www.neoease.com/">NeoEase</a> 提供, 通过 <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> 和 <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">CSS 3</a> 验证.-->
+	</div>
+</div>
+<!-- footer END -->
+
+</div>
+<!-- container END -->
+</div>
+<!-- wrap END -->
+
+<script type='text/javascript' src='http://wordpress007.sinaapp.com/wp-includes/js/admin-bar.js?ver=20110131'></script>
+
+<script type="text/javascript"><!--
+wpa2a.targets=[
+{title:'git 的方法小结',url:'http://wordpress007.sinaapp.com/?p=175'},
+{title:'UNIX下基本VI命令',url:'http://wordpress007.sinaapp.com/?p=170'},
+{title:'Discuz!模板风格制作',url:'http://wordpress007.sinaapp.com/?p=168'}];
+wpa2a.html_done=true;if(wpa2a.script_ready&&!wpa2a.done)wpa2a.init();wpa2a.script_load();
+//--></script>
+
+<p style="margin:0;padding:0;height:1px;overflow:hidden;">
+    <script type="text/javascript"><!--
+        var wumiiSitePrefix = "http://wordpress007.sinaapp.com";
+        var wumiiEnableCustomPos = false;
+        var wumiiParams = "&num=8&mode=3&displayInFeed=1&version=1.0.5.5&pf=WordPress3.2.1";
+    //--></script><script type="text/javascript" src="http://widget.wumii.com/ext/relatedItemsWidget.htm"></script><a href="http://www.wumii.com/widget/relatedItems.htm" style="border:0;"><img src="http://static.wumii.com/images/pixel.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;" /></a>
+</p>		<div id="wpadminbar">
+			<div class="quicklinks">
+				<ul>
+													
+		<li id="wp-admin-bar-my-account-with-avatar" class="menupop">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/profile.php"><span><img alt='' src='http://oimagec2.ydstatic.com/image?w=48&h=48&url=http%3A%2F%2F126.fm%2F1tlk4U' class='avatar avatar-16' height='16' width='16' />异步</span></a>
+
+						<ul>
+											
+		<li id="wp-admin-bar-edit-profile" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/profile.php">编辑我的个人资料</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-logout" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-login.php?action=logout&#038;_wpnonce=669bb4665e">登出</a>
+
+			
+					</li>							</ul>
+			
+					</li>													
+		<li id="wp-admin-bar-dashboard" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/">控制板</a>
+
+			
+					</li>													
+		<li id="wp-admin-bar-new-content" class="menupop">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/post-new.php?post_type=post"><span>添加</span></a>
+
+						<ul>
+											
+		<li id="wp-admin-bar-new-post" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/post-new.php?post_type=post">文章</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-new-page" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/post-new.php?post_type=page">页面</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-new-media" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/media-new.php">媒体</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-new-link" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/link-add.php">链接</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-new-user" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/user-new.php">用户</a>
+
+			
+					</li>							</ul>
+			
+					</li>													
+		<li id="wp-admin-bar-comments" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/edit-comments.php">评论 </a>
+
+			
+					</li>													
+		<li id="wp-admin-bar-appearance" class="menupop">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/themes.php"><span>外观</span></a>
+
+						<ul>
+											
+		<li id="wp-admin-bar-themes" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/themes.php">主题</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-widgets" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/widgets.php">小工具</a>
+
+			
+					</li>											
+		<li id="wp-admin-bar-menus" class="">
+			<a href="http://wordpress007.sinaapp.com/wp-admin/nav-menus.php">菜单</a>
+
+			
+					</li>							</ul>
+			
+					</li>					
+					<li id='daohang_datetime'>&nbsp;&nbsp;2012-08-30 09:59:40 Thursday</li>
+				</ul>
+
+				<script LANGUAGE="JavaScript">
+					function getDataTime(){ 
+						window.setInterval('showTime()',1000);
+					}
+					function showTime(){
+						var datetime = (new Date()).pattern("yyyy-MM-dd hh:mm:ss EEE");
+						document.getElementById('daohang_datetime').innerHTML="&nbsp;&nbsp;"+datetime; 
+						
+						Date.prototype.pattern=function(fmt) {        
+						var o = {        
+						"M+" : this.getMonth()+1, //月份        
+						"d+" : this.getDate(), //日        
+						"h+" : this.getHours()%12 == 0 ? 12 : this.getHours()%12, //小时        
+						"H+" : this.getHours(), //小时        
+						"m+" : this.getMinutes(), //分        
+						"s+" : this.getSeconds(), //秒        
+						"q+" : Math.floor((this.getMonth()+3)/3), //季度        
+						"S" : this.getMilliseconds() //毫秒        
+						};        
+						var week = {        
+						"0" : "\u65e5",        
+						"1" : "\u4e00",        
+						"2" : "\u4e8c",        
+						"3" : "\u4e09",        
+						"4" : "\u56db",        
+						"5" : "\u4e94",        
+						"6" : "\u516d"       
+						};        
+						if(/(y+)/.test(fmt)){        
+							fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));        
+						}        
+						if(/(E+)/.test(fmt)){        
+							fmt=fmt.replace(RegExp.$1, ((RegExp.$1.length>1) ? (RegExp.$1.length>2 ? "\u661f\u671f" : "\u5468") : "")+week[this.getDay()+""]);        
+						}        
+						for(var k in o){        
+							if(new RegExp("("+ k +")").test(fmt)){        
+								fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));        
+							}        
+						}        
+						return fmt;        
+					}       
+				</script>
+
+			</div>
+
+			<div id="adminbarsearch-wrap">
+				
+				<form action="http://wordpress007.sinaapp.com" method="get" id="adminbarsearch">
+					<input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" />
+					<input type="submit" class="adminbar-button" value="搜索"/>
+				</form>
+			</div>
+		</div>
+
+		
+
+<!--ikeepu START-->
+
+<div style="position: absolute; width: 86px; cursor: pointer; z-index: 2147483647; background-image: url(http://static.ikeepu.com/app/bm/autocheck.gif); background-attachment: scroll; background-color: transparent; top: 605px; left: 809px; height: 0px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; " title="add to ikeepu"></div>
+
+<script type="text/javascript" src="http://static.ikeepu.com/app/bm/s.js"></script>
+
+<!--ikeepu END-->
+
+
+</body>
+
+<!--百度开发平台监控脚本start-->
+<script src="http://app.baidu.com/static/appstore/monitor.st"></script>
+<!--百度开发平台监控脚本end-->
+
+<!--baidu tongji START-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F820a14a69a15b9079e8d3a068b7c795f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--baidu tongji END-->
+
+
+</html>
